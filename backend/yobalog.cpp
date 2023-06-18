@@ -22,4 +22,5 @@ int yobalog(YobaLogLevel level, std::string msg) {
         break;
     }
     std::cout << msg << "\n";
+    return 0;
 }

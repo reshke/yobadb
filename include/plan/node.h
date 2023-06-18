@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 #include <schema/schema.h>
 
@@ -7,12 +8,12 @@ enum YobaNodeType {
 };
 
 class YobaNode {
+    public:
     YobaNodeType type;
     void *body;
 
-    YobaNode(YobaNodeType, void * body);
+    YobaNode(YobaNodeType t, void * body);
 };
-
 
 
 struct YobaCreateTable {

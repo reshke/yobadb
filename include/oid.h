@@ -1,3 +1,5 @@
+#pragma once
+
 typedef unsigned long long int Oid;
 
 #define INVALID_OID 0

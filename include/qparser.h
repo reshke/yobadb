@@ -1,3 +1,4 @@
+#pragma once
 
 #include "plan/node.h"
 #include "string"

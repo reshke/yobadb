@@ -1,4 +1,4 @@
-
+#pragma once
 #include "oid.h"
 
 struct storage_coord

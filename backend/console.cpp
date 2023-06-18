@@ -8,7 +8,7 @@
 const std::string hellomsg = "\n"
 " Welcome to Yoba DB! \n"
 "The world most yoba database 💪💪💪💪\n"
-"enjoy your data 💅💅💅\n";
+"enjoy your data 💅💅💅\n\n";
 
 int console() {
 

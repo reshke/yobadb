@@ -1,5 +1,6 @@
+#pragma once
 #include "smgr.h"
 
-class YSmgr {
+class YSmgr : public StorageManager {
     void CreateTable(storage_coord coord);
 };

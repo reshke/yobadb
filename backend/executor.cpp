@@ -3,19 +3,20 @@
 #include "plan/node.h"
 #include "smgr/smgr.h"
 #include "smgr/storage_coord.h"
+#include "qparser.h"
 
 int exe(std::string q) {
     auto rs = parse(q);
     auto smgr = loadSmgr();
     switch (rs->type) {
-        case YobaCreateTable:
+        case YobaNodeType::CreateTable:
         smgr->CreateTable(storage_coord{
             tableSpace: 0,
             dboid: 0,
             reloid: 1,
         });
         break;
-        case YobaDropTable:
+        case YobaNodeType::DropTable:
         break;
     }
 }
